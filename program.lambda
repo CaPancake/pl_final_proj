@@ -1,0 +1,30 @@
+FUN increment_counter(counter) -> IF counter < 10 THEN increment_counter(counter + 1) ELSE counter
+VAR counter = 0
+VAR result = increment_counter(counter)
+FUN increment_counter(counter) -> IF counter < 10 THEN increment_counter(counter + 1) ELSE counter
+VAR result = increment_counter(counter)
+FUN factorial(n) -> IF n <= 1 THEN 1 ELSE n * factorial(n - 1)
+VAR fact_5 = factorial(5)
+VAR fact_3 = factorial(3)
+VAR fact_7 = factorial(7)
+FUN add(a, b) -> a + b
+VAR sum_10_20 = add(10, 20)
+VAR sum_3_7 = add(3, 7)
+FUN subtract(a, b) -> a - b
+VAR diff_20_10 = subtract(20, 10)
+VAR diff_7_3 = subtract(7, 3)
+FUN multiply(a, b) -> a * b
+VAR product_6_7 = multiply(6, 7)
+VAR product_3_3 = multiply(3, 3)
+FUN divide(a, b) -> IF b != 0 THEN a / b ELSE 0
+VAR div_20_5 = divide(20, 5)
+VAR div_9_3 = divide(9, 3)
+FUN max(a, b) -> IF a > b THEN a ELSE b
+VAR max_10_20 = max(10, 20)
+VAR max_7_3 = max(7, 3)
+FUN min(a, b) -> IF a < b THEN a ELSE b
+VAR min_10_20 = min(10, 20)
+VAR min_7_3 = min(7, 3)
+VAR combined_operations = add(multiply(2, 3), subtract(10, 4))
+VAR factorial_combination = factorial(add(3, 2))
+VAR check_counter = increment_counter(7)
